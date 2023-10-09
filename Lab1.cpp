@@ -4,7 +4,9 @@
 3. Составить программу для расчета заданного значения с проверкой исключительных ситуаций: деление на нуль, выход значений аргументов используемых функций за допустимые пределы и т. п. При вводе данных использовать проверку на ввод нечисловых данных.
 */
 
-//1
+#define PROBLEM 1
+
+#if PROBLEM == 1
 #include <iostream>
 #include <cmath>
 
@@ -22,8 +24,8 @@ int main() {
     return 0;
 }
 
-/* 
-//2
+#elif PROBLEM == 2
+
 #include <iostream>
 #include <cmath>
 #define PI 3.1415926535
@@ -46,7 +48,8 @@ int main() {
     return 0;
 }
 
-//3
+#elif PROBLEM == 3
+
 #include <iostream>
 #include <cmath>
 
@@ -71,4 +74,4 @@ int main() {
     return 0;
 }
 
-*/
+#endif
